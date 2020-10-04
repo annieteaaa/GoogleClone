@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="google.css">
+</head>
+
+<body>
+    <div class="topbar" id="advancedtop">
+        <a href="index.html"><img id="logo-home" src="google.png" alt="Google Logo" style="height: 30px;"></a>
+    </div>
+    <div
+        style="color: rgb(204, 19, 19); font-family: arial; font-size: 20px; padding: 25px 40px 25px; border-style: solid; border: hidden; border-bottom: 1px solid; border-color: rgb(238, 238, 238);">
+        Advanced Search
+    </div>
+    <form id="advancedform" action="https://google.com/search">
+        <table>
+            <tbody>
+                <tr id="heading">
+                        <td style="font-weight: normal">Find pages with...</td>
+                        <td></td>
+                        <td style="font-weight: bold; color: grey; font-size: 13px; padding-left: 0px; margin-left: 0px;">To do this in the search box</td>
+                </tr>
+                <tr class="advancedsearch">
+                    <td>all these words:</td>
+                    <td><input type="text" name="as_q"></td>
+                    <td class="hint">Type the important words:  tricolor rat terrier</td>
+                </tr>
+                <tr class="advancedsearch">
+                    <td>this exact word or phrase:</td>
+                    <td><input type="text" name="as_epq"></td>
+                    <td class="hint">Put exact words in quotes:  "rat terrier"</td>
+                </tr>
+                <tr class="advancedsearch">
+                    <td>any of these words:</td>
+                    <td><input type="text" name="as_oq"></td>
+                    <td class="hint">Type OR between all the words you want:  miniature OR standard</td>
+                </tr>
+                <tr class="advancedsearch">
+                    <td>none of these words:</td>
+                    <td><input type="text" name="as_eq"></td>
+                    <td class="hint">Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input id="advancedsubmit" type="submit" value="Advanced Search"></td>
+                    <td></td>
+                </div>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>

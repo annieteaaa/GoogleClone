@@ -1,0 +1,170 @@
+$font: arial;
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    div,
+    img {
+        display: table;
+        margin: 0 auto;
+    }
+
+    img {
+        margin-bottom: 30px;
+    }
+
+    #logo-home {
+        width: 350px;
+        margin-top: 70px;
+    }
+
+    #logo-image {
+        width: 275px;
+        margin-top: 100px;
+    }
+}
+
+#imagestext {
+    position: absolute;
+    margin-left: 56%;
+    margin-top: -3.7%;
+    font-family: $font;
+    color: blue;
+}
+
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-top: 7px;
+
+    a {
+        text-decoration: none;
+        margin: 15px;
+        font-family: $font;
+        font-size: 14px;
+        color: darkslategray;
+    }
+
+    a:hover {
+        color: gray;
+        text-decoration: underline;
+    }
+}
+
+#advancedtop {
+    background-color: rgb(238, 238, 238);
+    height: 60px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.searchbar {
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 20px;
+    height: 25px;
+    width: 550px;
+    border-width: 1px;
+    border-color: lightgrey;
+    border-style: solid;
+    font-size: 15px;
+}
+
+.searchbar:focus,
+input:focus {
+    outline: none;
+}
+
+.searchbar:hover {
+    box-shadow: 0px 1px 5px lightgrey;
+}
+
+.search {
+    width: 250px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    input {
+        padding: 10px 20px 10px;
+        color: darkslategray;
+        border: none;
+        border-radius: 5px;
+        margin: 0px 5px 0px;
+        display: block;
+        border: 1px solid transparent;
+    }
+
+    input:hover {
+        color: black;
+        border: solid;
+        border-color: darkgray;
+        border-width: 1px;
+        box-shadow: 0px 1px 1px lightgrey;
+    }
+}
+
+#advancedform {
+    display: block;
+    float: left;
+    font-family: $font;
+    color: darkslategray;
+    padding-left: 10px;
+    padding-top: 10px;
+
+    table {
+        margin-left: 30px;
+        width: 1200px;
+        tbody {
+            #heading {
+            }
+            tr {
+                td {
+                    padding: 10px;
+                    #advancedsubmit {
+                        font-size: 11px;
+                        font-weight: bold;
+                        color: white;
+                        background-color: rgb(131, 131, 255);
+                        border-radius: 2px;
+                        padding: auto;
+                        border-width: 1px;
+                        border: solid transparent;
+                        width: 125px;
+                        height: 30px;
+                    }
+                    #advancedsubmit:hover {
+                        border: solid;
+                        border-color: black;
+                        border-width: 1px;
+                        background-image: linear-gradient(rgb(102, 130, 255) ,rgb(85, 85, 255));
+                    }
+                    input {
+                        float: right;
+                        width: 600px;
+                        height: 25px;
+                        border: 1px solid rgb(201, 201, 201);
+                    }
+                    input:focus {
+                        border-color: blue;
+                        box-shadow: 0px 1px 1px darkgrey inset;
+                    }
+                }
+                .hint {
+                    font-size: 10px;
+                }
+            }
+            .advancedsearch {
+                font-size: 14px;
+                input {
+
+                }
+            }
+        }
+    }
+}
